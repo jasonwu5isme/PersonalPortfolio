@@ -1,51 +1,77 @@
-name: Deploy to GitHub Pages
+name: Deploy portfolio and sync Together Pass
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
+  schedule:
+    # Pull the latest TogetherPass prototype hourly. GitHub may delay schedules.
+    - cron: '17 * * * *'
 
-# 设置 GitHub Pages 部署所需的权限
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
-# 保证同一时间只有一个部署流水线执行
 concurrency:
-  group: 'pages'
-  cancel-in-progress: true
+  group: github-pages
+  cancel-in-progress: false
 
 jobs:
   build:
-    name: Build Website
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout portfolio
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Checkout latest public Together Pass
+        uses: actions/checkout@v4
+        with:
+          repository: jasonwu5isme/TogetherPass
+          ref: main
+          path: .togetherpass-source
+          persist-credentials: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '22'
           cache: npm
 
-      - name: Install dependencies
-        run: npm install
+      - name: Synchronize Together Pass showcase
+        run: node scripts/sync-togetherpass.mjs .togetherpass-source
 
-      - name: Build static site with Vite
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Type check portfolio
+        run: npm run lint
+
+      - name: Build static site
         run: npm run build
+
+      - name: Verify published project files
+        run: |
+          test -s dist/index.html
+          test -s dist/togetherpass/index.html
+          test -s dist/togetherpass/about.html
+          test -s dist/togetherpass/app.js
+          test -s dist/togetherpass/style.css
+          test -s dist/togetherpass/source.json
+          test -s dist/assets/projects/togetherpass-preview.png
+          touch dist/.nojekyll
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: dist
 
   deploy:
-    name: Deploy to Pages
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

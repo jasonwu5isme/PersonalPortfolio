@@ -28,7 +28,7 @@ export const HomeFeatured: React.FC<HomeFeaturedProps> = ({
               精选项目与交互原型
             </h2>
             <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">
-              每个卡片展示界面预留位、核心简介与体验入口
+              从业务问题到交互方案，查看项目思路与实际交付。
             </p>
           </div>
 
@@ -42,7 +42,7 @@ export const HomeFeatured: React.FC<HomeFeaturedProps> = ({
         </div>
 
         {/* 3 Compact Project Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
           {featured.map((project, idx) => (
             <div
               key={project.id}

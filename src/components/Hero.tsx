@@ -105,7 +105,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigateTab }) => {
                 精选代表作品 · 在线原型
               </div>
               <div className="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5 leading-relaxed">
-                TradeRemix AI · ZEEKR Flow · 闲鱼业务分析
+                TradeRemix AI · ZEEKR Flow · 闲鱼 · Together Pass
               </div>
             </div>
           </div>

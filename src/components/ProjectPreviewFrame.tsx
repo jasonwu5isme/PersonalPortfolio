@@ -13,14 +13,14 @@ export const ProjectPreviewFrame: React.FC<ProjectPreviewFrameProps> = ({ projec
   // Dynamic aesthetic frame background matching project visual tone
   const getFrameBg = () => {
     if (project.id === 'traderemix-ai') return 'bg-[#070f20]';
-    if (project.id === 'zeekr-p2p-charging') return 'bg-black';
+    if (project.id === 'zeekr-flow') return 'bg-black';
     if (project.id === 'idle-fish-analysis') return 'bg-[#f5f7fa] dark:bg-[#121316]';
     return 'bg-neutral-100 dark:bg-neutral-900';
   };
 
   const getImageStyle = () => {
     if (project.id === 'traderemix-ai') return 'object-contain p-1.5 sm:p-2';
-    if (project.id === 'zeekr-p2p-charging') return 'object-contain';
+    if (project.id === 'zeekr-flow') return 'object-contain';
     if (project.id === 'idle-fish-analysis') return 'object-cover object-top';
     return 'object-cover object-top';
   };

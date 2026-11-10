@@ -75,7 +75,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenDetails }) => 
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {filteredFeatured.map((project, index) => (
             <ProjectCard
               key={project.id}
