@@ -425,7 +425,7 @@ export const EDUCATION_HISTORY: EducationItem[] = [
   {
     institution: '考文垂大学',
     englishInstitution: 'Coventry University',
-    degree: '市场营销 荣誉文学学士',
+    degree: '市场营销 文学学士',
     period: '2020.09 — 2024.11',
     status: 'Bachelor of Arts (Marketing)',
     note: '暨南大学 2+2 留学项目，所获本科学位已完成中国教育部留学服务中心认证。',
