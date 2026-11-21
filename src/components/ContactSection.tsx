@@ -16,7 +16,7 @@ export const ContactSection: React.FC = () => {
       {/* Section Header */}
       <div className="text-center max-w-2xl mx-auto mb-12">
         <div className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-2">
-          Get In Touch · 联系方式
+          联系方式
         </div>
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-white mb-4 [text-wrap:balance]">
           联系吴世杰
@@ -35,13 +35,10 @@ export const ContactSection: React.FC = () => {
               <Mail className="w-5 h-5" />
             </div>
             <div className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-1">
-              电子邮箱 (Direct Email)
+              电子邮箱
             </div>
             <div className="text-base font-bold text-neutral-900 dark:text-white font-mono break-all mb-2">
               {PERSONAL_INFO.email}
-            </div>
-            <div className="text-xs text-neutral-500 dark:text-neutral-400">
-              欢迎随时来信，沟通项目细节或校招机会
             </div>
           </div>
 
@@ -50,7 +47,7 @@ export const ContactSection: React.FC = () => {
               href={`mailto:${PERSONAL_INFO.email}`}
               className="flex-1 py-2 px-3 text-xs font-semibold text-center rounded-lg bg-blue-600 hover:bg-blue-700 text-white transition-colors cursor-pointer"
             >
-              直接发信
+              写邮件
             </a>
             <button
               onClick={handleCopyEmail}
@@ -85,7 +82,7 @@ export const ContactSection: React.FC = () => {
               @{PERSONAL_INFO.githubUsername}
             </div>
             <div className="text-xs text-neutral-500 dark:text-neutral-400">
-              公开托管项目作品、在线原型与源码仓库
+              查看公开项目及源代码
             </div>
           </div>
 
@@ -96,7 +93,7 @@ export const ContactSection: React.FC = () => {
               rel="noopener noreferrer"
               className="w-full py-2 px-3 text-xs font-semibold text-center rounded-lg bg-neutral-900 hover:bg-neutral-800 dark:bg-neutral-100 dark:hover:bg-white text-white dark:text-neutral-900 transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
             >
-              <span>访问 GitHub 主页</span>
+              <span>前往 GitHub</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
           </div>

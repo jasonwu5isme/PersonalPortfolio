@@ -137,7 +137,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
                   <div>
-                    <span className="text-neutral-400">研究背景：</span>
+                    <span className="text-neutral-400">项目背景：</span>
                     <span className="text-neutral-700 dark:text-neutral-300 font-medium ml-1">
                       {caseStudy.overview.background}
                     </span>
@@ -163,7 +163,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                 </div>
 
                 <div className="pt-3 border-t border-neutral-200/60 dark:border-neutral-800/60 text-xs sm:text-sm">
-                  <span className="text-neutral-400">职责概括：</span>
+                  <span className="text-neutral-400">我的职责：</span>
                   <span className="text-neutral-800 dark:text-neutral-200 font-medium ml-1">
                     {caseStudy.overview.myRole}
                   </span>
@@ -210,7 +210,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             <div className="space-y-4">
               <div className="p-4 sm:p-5 rounded-xl bg-neutral-50 dark:bg-neutral-900/60 border border-neutral-200/70 dark:border-neutral-800/70">
                 <div className="text-xs font-semibold text-neutral-500 mb-2">
-                  核心问题定义
+                  项目要解决的问题
                 </div>
                 <p className="text-neutral-700 dark:text-neutral-300 text-xs sm:text-sm leading-relaxed">
                   {caseStudy.problem.statement}
@@ -232,7 +232,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           {activeTab === 'contribution' && (
             <div className="space-y-3">
               <div className="text-xs font-semibold text-neutral-500 mb-2">
-                具体负责的工作内容
+                我负责的工作
               </div>
               {caseStudy.myContribution.map((item, idx) => (
                 <div
@@ -250,7 +250,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           {activeTab === 'process' && (
             <div className="space-y-4">
               <div className="text-xs font-semibold text-neutral-500 mb-1">
-                分析与设计推导步骤
+                设计步骤
               </div>
 
               <div className="space-y-3.5">
@@ -297,7 +297,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           {activeTab === 'deliverables' && (
             <div className="space-y-3">
               <div className="text-xs font-semibold text-neutral-500 mb-2">
-                实际完成交付物
+                项目成果
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {caseStudy.deliverables.map((item, idx) => (
@@ -332,13 +332,13 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             <div className="p-4 sm:p-5 rounded-xl bg-neutral-50 dark:bg-neutral-900/60 border border-neutral-200/70 dark:border-neutral-800/70 space-y-4">
               <div className="text-xs font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5">
                 <RotateCcw className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
-                <span>局限说明与改进设想</span>
+                <span>局限与改进</span>
               </div>
 
               <div className="space-y-3 text-xs">
                 <div>
                   <div className="font-semibold text-neutral-800 dark:text-neutral-200 mb-1.5">
-                    模拟与待验证内容：
+                    尚待验证：
                   </div>
                   <ul className="space-y-1 text-neutral-600 dark:text-neutral-400 list-disc list-inside leading-relaxed">
                     {caseStudy.limitationsAndReflection.simulatedOrUnverified.map((lim, lIdx) => (

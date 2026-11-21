@@ -93,7 +93,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => handleNavClick('contact')}
             className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-medium text-white bg-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 rounded-full hover:bg-neutral-800 dark:hover:bg-white transition-all shadow-xs hover:shadow whitespace-nowrap shrink-0 cursor-pointer"
           >
-            <span>取得联系</span>
+            <span>联系我</span>
             <ArrowUpRight className="w-3 h-3" />
           </button>
 
@@ -128,7 +128,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => handleNavClick('contact')}
             className="mt-3 text-center py-2 text-xs font-semibold text-white bg-blue-600 rounded-full"
           >
-            取得联系
+            联系我
           </button>
         </div>
       )}

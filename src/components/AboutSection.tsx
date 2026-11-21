@@ -26,63 +26,17 @@ export const AboutSection: React.FC = () => {
         </h1>
       </div>
 
-      {/* Narrative & Positioning Card */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
-        <div className="lg:col-span-7 space-y-4 text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
-          <p>
-            在海外业务实习期间，我整理过中东和南美市场资料，也参与编写英文产品手册。读商学硕士后，我开始更关心业务在组织内部怎样运转。
-          </p>
-          <p>
-            Together Pass 是一个例子。团队希望帮助居民参加社区活动，我负责比较三种资助方式。把报名协助、现场接待等成本按同一口径算进去，才看得清礼品卡比直接入场贵在哪里，以及试点要验证什么。
-          </p>
-          <p>
-            在另外一些项目里，我用流程图说明谁负责下一步，用交互原型演示信息不全时还有哪些选择。
-          </p>
-        </div>
-
-        <div className="lg:col-span-5 bg-neutral-50/80 dark:bg-neutral-900/40 p-6 rounded-2xl border border-neutral-200/80 dark:border-neutral-800/80 space-y-4">
-          <div className="text-xs font-bold text-neutral-400 dark:text-neutral-500">
-            案例中的三个判断
-          </div>
-          <div className="space-y-3 text-xs sm:text-sm">
-            <div className="flex items-start gap-3">
-              <span className="w-5 h-5 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
-                1
-              </span>
-              <div>
-                <div className="font-semibold text-neutral-900 dark:text-neutral-100">资助方式值多少钱？</div>
-                <div className="text-neutral-500 dark:text-neutral-400 mt-0.5">Together Pass 的 30 人试点预算中，礼品卡比直接入场多 A$500。</div>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="w-5 h-5 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
-                2
-              </span>
-              <div>
-                <div className="font-semibold text-neutral-900 dark:text-neutral-100">车主登记后意味着什么？</div>
-                <div className="text-neutral-500 dark:text-neutral-400 mt-0.5">ZEEKR Flow 记录预计到达时间。车位仍按现场情况使用。</div>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="w-5 h-5 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
-                3
-              </span>
-              <div>
-                <div className="font-semibold text-neutral-900 dark:text-neutral-100">素材缺失时能交付什么？</div>
-                <div className="text-neutral-500 dark:text-neutral-400 mt-0.5">TradeRemix 保留待核实的信息，让运营选择调整脚本或安排补拍。</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="mb-16 max-w-3xl space-y-4 text-base leading-relaxed text-neutral-600 dark:text-neutral-300">
+        <p>我本科就读于考文垂大学市场营销专业，目前在悉尼大学攻读商学硕士，主修商业信息系统。</p>
+        <p>做海外业务实习时，我负责整理中东和南美市场的行业资料，比较外贸服务商的报价和服务内容，也参与编写英文产品手册。</p>
+        <p>在悉尼大学，我和五位同学一起为 Blacktown 居民设计了社区活动资助方案。我负责测算试点预算，把报名协助、现场接待和入场费用逐项列出，再比较购买会员、直接付费和发放礼品卡三种方式的成本。</p>
       </div>
 
       {/* Capability Structure */}
       <section className="mb-16">
         <div className="text-xs font-semibold text-neutral-500 dark:text-neutral-400 mb-6 flex items-center gap-2">
           <Layers className="w-4 h-4 text-neutral-500" />
-          <span>专业能力结构</span>
+          <span>专业技能</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -165,7 +119,7 @@ export const AboutSection: React.FC = () => {
               </div>
 
               <div className="pt-4 border-t border-neutral-100 dark:border-neutral-800/80">
-                <div className="text-xs text-neutral-400 mb-2">核心方向：</div>
+                <div className="text-xs text-neutral-400 mb-2">学习方向：</div>
                 <div className="flex flex-wrap gap-1.5">
                   {edu.focus.map((item, fIdx) => (
                     <span

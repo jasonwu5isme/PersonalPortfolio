@@ -75,7 +75,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
         {/* Capabilities / Tags */}
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-neutral-500 dark:text-neutral-400 mb-6">
-          <span className="text-neutral-400 dark:text-neutral-500 font-mono text-[11px]">专业标签:</span>
+          <span className="text-neutral-400 dark:text-neutral-500 font-mono text-[11px]">项目标签</span>
           {project.tags.map((tag, i) => (
             <React.Fragment key={tag}>
               {i > 0 && <span aria-hidden="true" className="text-neutral-300 dark:text-neutral-700">/</span>}
@@ -95,7 +95,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500 rounded-lg transition-colors shadow-2xs whitespace-nowrap cursor-pointer"
           >
-            <span>在线体验 Demo</span>
+            <span>体验原型</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         ) : isPdfAvailable && project.pdfPath ? (

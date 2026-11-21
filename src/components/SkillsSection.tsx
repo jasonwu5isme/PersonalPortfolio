@@ -23,11 +23,9 @@ export const SkillsSection: React.FC = () => {
             Section 03 · Skills & Methodologies
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-neutral-900 dark:text-white [text-wrap:balance]">
-            专业能力与工具体系
+            技能与工具
           </h2>
-          <p className="text-base text-neutral-500 dark:text-neutral-400 mt-2">
-            拒绝虚假的百分比评分条，聚焦具体应用场景与落地方案
-          </p>
+          
         </div>
 
         {/* 3 Skill Pillars Grid */}

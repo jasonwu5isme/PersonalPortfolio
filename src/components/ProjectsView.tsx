@@ -35,10 +35,10 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenDetails }) => 
           项目作品
         </div>
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-white [text-wrap:balance]">
-          项目作品与案例分析
+          项目案例
         </h1>
         <p className="text-base sm:text-lg text-neutral-500 dark:text-neutral-400 mt-3 leading-relaxed [text-wrap:balance]">
-          四个案例涉及外贸内容制作、公共充电、二手交易和社区服务。点开案例可查看我的分工、方案依据与尚待验证的问题。
+          这里收录了三个课程项目和一个个人原型。每个案例都列出了我的分工和主要成果。
         </p>
 
         {/* Category Filters */}
@@ -68,7 +68,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenDetails }) => 
       <section className="mb-20">
         <div className="flex items-center justify-between pb-4 mb-8 border-b border-neutral-200/80 dark:border-neutral-800/80">
           <h2 className="text-xl font-bold tracking-tight text-neutral-900 dark:text-white flex items-center gap-2">
-            <span>精选代表作品</span>
+            <span>精选项目</span>
             <span className="text-xs font-normal text-neutral-400">
               ({filteredFeatured.length} 个)
             </span>
@@ -93,7 +93,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenDetails }) => 
           <div className="flex items-center justify-between pb-4 mb-8 border-b border-neutral-200/80 dark:border-neutral-800/80">
             <div>
               <h2 className="text-xl font-bold tracking-tight text-neutral-900 dark:text-white">
-                更多项目实践
+                其他项目
               </h2>
               <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1">
                 校企合作商业增长与产品分析案例

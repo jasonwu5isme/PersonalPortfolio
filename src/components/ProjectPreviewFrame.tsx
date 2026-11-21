@@ -76,11 +76,11 @@ export const ProjectPreviewFrame: React.FC<ProjectPreviewFrameProps> = ({ projec
             <span className="truncate">{project.category}</span>
             {project.demoUrl ? (
               <span className="text-blue-600 dark:text-blue-400 font-medium shrink-0">
-                支持在线体验 →
+                体验原型 →
               </span>
             ) : (
               <span className="text-amber-600 dark:text-amber-400 font-medium shrink-0">
-                查看案例解析 →
+                查看案例 →
               </span>
             )}
           </div>

@@ -97,7 +97,7 @@ export const ResumeView: React.FC<ResumeViewProps> = ({ onOpenProjectCaseStudy }
                 )}
 
                 <div className="mt-4 pt-3 border-t border-neutral-100 dark:border-neutral-800/60 flex flex-wrap items-center gap-1.5 text-xs">
-                  <span className="text-neutral-400 mr-1">核心方向：</span>
+                  <span className="text-neutral-400 mr-1">学习方向：</span>
                   {edu.focus.map((item, fIdx) => (
                     <span
                       key={fIdx}
@@ -184,7 +184,7 @@ export const ResumeView: React.FC<ResumeViewProps> = ({ onOpenProjectCaseStudy }
                       onClick={() => onOpenProjectCaseStudy?.(proj.linkToProjectId!)}
                       className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
                     >
-                      <span>查看详细作品案例</span>
+                      <span>查看案例</span>
                       <ExternalLink className="w-3 h-3" />
                     </button>
                   </div>
@@ -198,7 +198,7 @@ export const ResumeView: React.FC<ResumeViewProps> = ({ onOpenProjectCaseStudy }
         <section>
           <div className="flex items-center gap-2.5 text-xs font-semibold text-neutral-500 dark:text-neutral-400 mb-6">
             <Sparkles className="w-4 h-4 text-amber-500" />
-            <span>专业技能与工具储备</span>
+            <span>专业技能</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

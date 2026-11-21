@@ -30,7 +30,7 @@ export const HomeFeatured: React.FC<HomeFeaturedProps> = ({
             onClick={() => onNavigateTab('projects')}
             className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors whitespace-nowrap cursor-pointer"
           >
-            <span>进入全部项目作品</span>
+            <span>全部项目</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
