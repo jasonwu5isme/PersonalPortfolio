@@ -19,10 +19,10 @@ export const ContactSection: React.FC = () => {
           Get In Touch · 联系方式
         </div>
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-white mb-4 [text-wrap:balance]">
-          期待与您交流产品思考与职业机会
+          联系吴世杰
         </h1>
         <p className="text-base text-neutral-500 dark:text-neutral-400 leading-relaxed [text-wrap:balance]">
-          我正在寻找 2027 届校招及相关实习的 <strong className="text-neutral-800 dark:text-neutral-200">AI产品经理、互联网产品经理、商业分析（BA）</strong> 或企业数字化岗位。欢迎通过邮件或 GitHub 与我取得联系。
+          我预计于 2027 年毕业，关注数字化咨询、业务分析和产品与服务设计方向的实习及校招机会。欢迎来信讨论项目或岗位。
         </p>
       </div>
 

@@ -38,7 +38,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenDetails }) => 
           项目作品与案例分析
         </h1>
         <p className="text-base sm:text-lg text-neutral-500 dark:text-neutral-400 mt-3 leading-relaxed [text-wrap:balance]">
-          围绕AI应用设计、协同产品机制及业务系统建模的代表性作品。每个案例均包含问题定义、个人工作、推导过程、交付成果与反思复盘。
+          四个案例涉及外贸内容制作、公共充电、二手交易和社区服务。点开案例可查看我的分工、方案依据与尚待验证的问题。
         </p>
 
         {/* Category Filters */}

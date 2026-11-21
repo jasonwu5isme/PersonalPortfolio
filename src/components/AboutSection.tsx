@@ -22,30 +22,27 @@ export const AboutSection: React.FC = () => {
           关于我
         </div>
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-white [text-wrap:balance]">
-          商业理解 × 产品设计 × AI工具
+          从市场营销到商业信息系统
         </h1>
-        <p className="text-base text-neutral-500 dark:text-neutral-400 mt-2">
-          理解业务问题 · 构想数字化方案 · 借助AI工具加速落地验证
-        </p>
       </div>
 
       {/* Narrative & Positioning Card */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
         <div className="lg:col-span-7 space-y-4 text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
           <p>
-            我的学术背景横跨<strong className="text-neutral-900 dark:text-neutral-100 font-semibold">市场营销</strong>与<strong className="text-neutral-900 dark:text-neutral-100 font-semibold">商业信息系统</strong>。通过商业研究、产品设计和系统分析项目，我逐渐形成了从业务问题出发、理解用户需求并设计数字化解决方案的工作方式。
+            在海外业务实习期间，我整理过中东和南美市场资料，也参与编写英文产品手册。读商学硕士后，我开始更关心业务在组织内部怎样运转。
           </p>
           <p>
-            目前重点关注<strong className="text-neutral-900 dark:text-neutral-100 font-semibold">AI应用产品、企业数字化及业务分析</strong>，希望将商业理解与AI工具结合，探索能够实际解决具体业务问题的产品方案。
+            Together Pass 是一个例子。团队希望帮助居民参加社区活动，我负责比较三种资助方式。把报名协助、现场接待等成本按同一口径算进去，才看得清礼品卡比直接入场贵在哪里，以及试点要验证什么。
           </p>
           <p>
-            在过往实践中，我专注于通过需求分析、UML系统建模和业务流程梳理厘清产品逻辑，并借助提示词工程与前端工具协同，搭建可点击体验的网页原型。
+            在另外一些项目里，我用流程图说明谁负责下一步，用交互原型演示信息不全时还有哪些选择。
           </p>
         </div>
 
         <div className="lg:col-span-5 bg-neutral-50/80 dark:bg-neutral-900/40 p-6 rounded-2xl border border-neutral-200/80 dark:border-neutral-800/80 space-y-4">
           <div className="text-xs font-bold text-neutral-400 dark:text-neutral-500">
-            工作理念
+            案例中的三个判断
           </div>
           <div className="space-y-3 text-xs sm:text-sm">
             <div className="flex items-start gap-3">
@@ -53,8 +50,8 @@ export const AboutSection: React.FC = () => {
                 1
               </span>
               <div>
-                <div className="font-semibold text-neutral-900 dark:text-neutral-100">从真实业务痛点出发</div>
-                <div className="text-neutral-500 dark:text-neutral-400 mt-0.5">明确用户真实诉求与业务目标，避免脱离实际场景的空泛设计。</div>
+                <div className="font-semibold text-neutral-900 dark:text-neutral-100">资助方式值多少钱？</div>
+                <div className="text-neutral-500 dark:text-neutral-400 mt-0.5">Together Pass 的 30 人试点预算中，礼品卡比直接入场多 A$500。</div>
               </div>
             </div>
 
@@ -63,8 +60,8 @@ export const AboutSection: React.FC = () => {
                 2
               </span>
               <div>
-                <div className="font-semibold text-neutral-900 dark:text-neutral-100">用系统建模理清复杂逻辑</div>
-                <div className="text-neutral-500 dark:text-neutral-400 mt-0.5">运用活动图、用例图与状态机规范定义各角色权责与状态变迁。</div>
+                <div className="font-semibold text-neutral-900 dark:text-neutral-100">车主登记后意味着什么？</div>
+                <div className="text-neutral-500 dark:text-neutral-400 mt-0.5">ZEEKR Flow 记录预计到达时间。车位仍按现场情况使用。</div>
               </div>
             </div>
 
@@ -73,8 +70,8 @@ export const AboutSection: React.FC = () => {
                 3
               </span>
               <div>
-                <div className="font-semibold text-neutral-900 dark:text-neutral-100">通过可交互原型加速验证</div>
-                <div className="text-neutral-500 dark:text-neutral-400 mt-0.5">借助现代开发工具搭建可操作的页面，帮助团队直观感受产品体验。</div>
+                <div className="font-semibold text-neutral-900 dark:text-neutral-100">素材缺失时能交付什么？</div>
+                <div className="text-neutral-500 dark:text-neutral-400 mt-0.5">TradeRemix 保留待核实的信息，让运营选择调整脚本或安排补拍。</div>
               </div>
             </div>
           </div>

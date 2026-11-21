@@ -5,19 +5,16 @@ export const PERSONAL_INFO = {
   englishName: 'Shijie Wu',
   brandTitle: 'Shijie Wu',
   siteTitle: 'Shijie Wu — 作品集',
-  role: '求职方向 · AI 产品 / 业务型产品经理',
-  mainHeadline: '把业务需求转化为可试用的产品原型。',
-  subHeadline: 'AI Product Design & Business Analysis',
   shortBio:
-    '我是吴世杰，悉尼大学商学硕士在读，方向为商业信息系统。我关注 AI 如何支持具体的业务决策，例如帮外贸团队判断现有素材能拍什么、哪些产品信息还需要确认。',
+    '我在悉尼大学读商学硕士，主修商业信息系统，本科读的是市场营销。在社区服务项目里，我算过三种资助方式各要花多少钱。在闲鱼案例里，我梳理的是一笔订单发生争议后，买家、卖家和客服分别要做什么。',
   email: '158975683@qq.com',
   github: 'https://github.com/jasonwu5isme',
   githubUsername: 'jasonwu5isme',
   portfolioRepo: 'https://github.com/jasonwu5isme/PersonalPortfolio',
   targetRoles: [
-    'AI 产品经理',
-    '业务型产品经理',
-    '商业分析（Business Analysis）',
+    '数字化咨询',
+    '业务分析',
+    '产品与服务设计',
   ],
   coreCapabilities: [
     'AI应用原型设计',
@@ -455,11 +452,7 @@ export const EDUCATION_HISTORY: EducationItem[] = [
 export const RESUME_DATA: ResumeData = {
   name: '吴世杰',
   englishName: 'Shijie Wu',
-  targetRoles: [
-    'AI 产品经理',
-    '业务型产品经理',
-    '商业分析（Business Analysis）',
-  ],
+  targetRoles: PERSONAL_INFO.targetRoles,
   email: '158975683@qq.com',
   github: 'https://github.com/jasonwu5isme',
   githubUsername: 'jasonwu5isme',

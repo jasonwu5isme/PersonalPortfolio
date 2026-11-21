@@ -21,15 +21,9 @@ export const HomeFeatured: React.FC<HomeFeaturedProps> = ({
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
           <div>
-            <div className="text-xs font-semibold text-blue-600 dark:text-blue-400 mb-2">
-              精选代表作品
-            </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-neutral-900 dark:text-white">
-              精选项目与交互原型
+              项目选集
             </h2>
-            <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">
-              从业务问题到交互方案，查看项目思路与实际交付。
-            </p>
           </div>
 
           <button

@@ -22,7 +22,7 @@ export const ResumeView: React.FC<ResumeViewProps> = ({ onOpenProjectCaseStudy }
             </span>
           </h1>
           <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-300 mt-2 max-w-2xl leading-relaxed">
-            商学硕士在读（商业信息系统方向，预计 2027 年毕业）· 市场营销文学学士。关注需求分析、UML系统建模与AI辅助交互原型设计。
+            商学硕士在读（商业信息系统方向，预计 2027 年毕业）· 市场营销文学学士。
           </p>
 
           {/* Target Roles */}

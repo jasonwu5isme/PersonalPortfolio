@@ -1,6 +1,8 @@
 {
-  "name": "Shijie Wu — Product & AI Portfolio",
-  "description": "吴世杰的个人作品集，涵盖 AI 产品设计、商业系统分析与交互原型。悉尼大学商学硕士在读，方向为商业信息系统。",
+  "name": "吴世杰｜商业分析与数字化实践",
+  "description": "吴世杰的个人作品集。四个案例记录了我在服务预算、交易流程、公共充电与外贸内容制作中的分析和设计工作。",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
