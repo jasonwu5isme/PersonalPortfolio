@@ -25,13 +25,13 @@
 
 ## 核心作品与实践案例
 
-1. **TradeRemix AI（AI视频内容生产与再创作原型）**
+1. **TradeRemix AI（外贸 B2B 视频选题与分镜工作台）**
    - **时间**：2026.10—2026.11
    - **项目定位**：AI产品经理招聘笔试概念原型，个人产品设计作品
    - **性质说明**：前端交互式概念原型演示（未接入生产环境模型后端）
    - **在线体验 Demo**：[https://jasonwu5isme.github.io/TradeRemixAi/](https://jasonwu5isme.github.io/TradeRemixAi/)
    - **核心标签**：AI Product Design · Workflow Design · Prompt Engineering · Interactive Prototype
-   - **案例分析**：提供问题定义、Prompt设计、工作流单屏推演、交付物与复盘反思
+   - **案例分析**：展示选题判断、素材缺口处理、分镜交付与补拍流程
 
 2. **澳大利亚极氪汽车｜公共充电协同产品设计（ZEEKR Flow）**
    - **时间**：2026.03—2026.06

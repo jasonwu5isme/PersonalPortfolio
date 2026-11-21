@@ -50,6 +50,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
   if (!project) return null;
 
   const { caseStudy } = project;
+  const { evidence } = caseStudy;
 
   const tabs: { id: typeof activeTab; label: string }[] = [
     { id: 'overview', label: '项目概览' },
@@ -168,6 +169,33 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                   </span>
                 </div>
               </div>
+
+              {evidence && (
+                <section className="space-y-3 rounded-xl border border-neutral-200 p-4 dark:border-neutral-800 sm:p-5">
+                  <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+                    {evidence.title}
+                  </h3>
+                  {evidence.imagePath && (
+                    <a href={evidence.imagePath} target="_blank" rel="noopener noreferrer" className="block">
+                      <img src={evidence.imagePath} alt={evidence.imageAlt} className="w-full rounded-lg" />
+                      <span className="mt-2 inline-block text-xs font-medium text-blue-600 dark:text-blue-400">查看大图</span>
+                    </a>
+                  )}
+                  {evidence.metrics && (
+                    <dl className="grid grid-cols-3 gap-2">
+                      {evidence.metrics.map(({ label, value }) => (
+                        <div key={label} className="rounded-lg bg-neutral-50 p-2.5 dark:bg-neutral-900">
+                          <dt className="text-xs text-neutral-600 dark:text-neutral-400">{label}</dt>
+                          <dd className="mt-1 text-sm font-semibold tabular-nums text-neutral-900 dark:text-neutral-100">{value}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  )}
+                  <p className="text-xs leading-relaxed text-neutral-700 dark:text-neutral-300 sm:text-sm">
+                    {evidence.caption}
+                  </p>
+                </section>
+              )}
 
               {project.natureNote && (
                 <div className="text-xs text-neutral-500 dark:text-neutral-400 p-3 rounded-lg bg-neutral-50 dark:bg-neutral-900/40 border border-neutral-200/50 dark:border-neutral-800/50">

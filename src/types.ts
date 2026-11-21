@@ -10,6 +10,13 @@ export interface ProjectCaseStudy {
     statement: string;
     whyItMatters: string;
   };
+  evidence?: {
+    title: string;
+    caption: string;
+    imagePath?: string;
+    imageAlt?: string;
+    metrics?: { label: string; value: string }[];
+  };
   myContribution: string[];
   designProcess: {
     step: string;

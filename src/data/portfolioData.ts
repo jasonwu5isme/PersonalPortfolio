@@ -5,20 +5,19 @@ export const PERSONAL_INFO = {
   englishName: 'Shijie Wu',
   brandTitle: 'Shijie Wu',
   siteTitle: 'Shijie Wu — 作品集',
-  role: '产品设计 · AI应用 · 商业分析',
-  mainHeadline: '让想法成为可以体验的产品。',
-  subHeadline: 'From Business Problems to Interactive Products.',
+  role: '求职方向 · AI 产品 / 业务型产品经理',
+  mainHeadline: '把业务需求转化为可试用的产品原型。',
+  subHeadline: 'AI Product Design & Business Analysis',
   shortBio:
-    '悉尼大学商业信息系统硕士，拥有市场营销与商业信息系统复合背景。关注AI应用、产品设计及数字化业务，通过需求分析、商业研究与AI辅助开发，将产品概念转化为可交互的原型作品。',
+    '我是吴世杰，悉尼大学商学硕士在读，方向为商业信息系统。我关注 AI 如何支持具体的业务决策，例如帮外贸团队判断现有素材能拍什么、哪些产品信息还需要确认。',
   email: '158975683@qq.com',
   github: 'https://github.com/jasonwu5isme',
   githubUsername: 'jasonwu5isme',
   portfolioRepo: 'https://github.com/jasonwu5isme/PersonalPortfolio',
   targetRoles: [
-    'AI产品经理 / 互联网产品经理',
+    'AI 产品经理',
+    '业务型产品经理',
     '商业分析（Business Analysis）',
-    '企业数字化与解决方案',
-    '数字化运营及商业相关岗位',
   ],
   coreCapabilities: [
     'AI应用原型设计',
@@ -33,7 +32,7 @@ export const PERSONAL_INFO = {
 export const PROJECTS: Project[] = [
   {
     id: 'traderemix-ai',
-    title: 'TradeRemix AI｜视频内容生产与再创作原型',
+    title: 'TradeRemix AI｜外贸 B2B 视频选题与分镜工作台',
     englishTitle: 'TradeRemix AI',
     category: 'AI产品设计',
     typeCategory: 'AI Applications',
@@ -41,9 +40,9 @@ export const PROJECTS: Project[] = [
     isCompleted: true,
     nature: 'AI产品经理招聘笔试概念原型，个人产品设计作品',
     natureNote: '概念原型 · 前端交互演示（未接入生产环境模型后端）',
-    subtitle: '探索视频二次创作场景下的素材整理、脚本生成与分段微调工作流',
+    subtitle: '从海外买家的采购疑问出发，用现有工厂素材规划可执行的分镜',
     description:
-      '围绕AI辅助视频内容生产与二次创作场景，设计素材组织、内容处理和视频创作的产品工作流，并使用Google AI Studio制作可交互网页原型。',
+      '帮助外贸内容运营判断哪些选题已有素材支持、哪些产品信息待核实，并将判断转化为分镜、剪辑交付单和补拍任务。',
     tags: [
       'AI产品设计',
       '工作流设计',
@@ -56,61 +55,58 @@ export const PROJECTS: Project[] = [
     type: 'live-demo',
     caseStudy: {
       overview: {
-        background: '源于招聘笔试业务场景题目延伸，针对创作者在视频二次创作中的操作步骤进行产品化设计。',
-        target: '个人视频创作者、自媒体二次创作场景。',
-        nature: 'AI产品经理招聘笔试概念原型，个人产品设计作品。',
+        background: '由 AI 产品经理招聘笔试延伸的个人项目，聚焦外贸 B2B 短视频从选题到剪辑交付的工作流。',
+        target: '外贸业务和海外内容运营团队，以及接收拍摄或剪辑任务的工厂与制作人员。',
+        nature: '个人产品设计作品。交互原型使用模拟素材和预设规则。',
         period: '2026.10—2026.11',
-        myRole: '独立负责业务需求拆解、提示词设计、页面交互框架及原型开发。',
+        myRole: '独立完成需求拆解、素材匹配规则、异常处理与交付流程设计，并使用 AI 辅助制作交互原型。',
       },
       problem: {
-        statement: '创作者在进行视频二次创作时，需要在多个工具之间切换查找素材、提取文案和对照时间点，操作步骤较为分散。',
-        whyItMatters: '二创场景重视制作效率。如果能在单一界面内完成素材组织与分段脚本草拟，能够有效帮助创作者梳理构思。',
+        statement: '海外买家首次采购前关心包装与交付，但演示素材库缺少包装镜头，起订量也有待确认。',
+        whyItMatters: '运营需要区分素材缺口与事实缺口。包装镜头可交给工厂补拍。未经确认的起订量只能作为待核实的问题，确认后再写入脚本。',
+      },
+      evidence: {
+        title: '包装镜头缺失时，运营怎么继续？',
+        imagePath: 'assets/projects/traderemix-shot-review.webp',
+        imageAlt: 'TradeRemix 工作台第三个分镜显示包装素材缺失及替代建议',
+        caption: '原型中的首次采购场景。保留包装主题时，可从分镜创建补拍任务。需要先交付时，可用展厅镜头替换，并改写文案，使内容与镜头能够支持的事实一致。',
       },
       myContribution: [
-        '拆解招聘笔试提出的业务需求，设计产品功能及用户操作流程。',
-        '使用Google AI Studio和大语言模型辅助构建交互原型。',
-        '通过多轮检查和迭代优化页面交互、工作流及异常场景。',
-        '区分模拟流程与真实功能，不将概念原型描述为生产级AI产品。',
+        '把买家疑问拆成选题、所需素材和需要核实的产品信息。',
+        '设计素材覆盖判断和分镜异常处理，明确哪些选题可以进入制作、哪些需要补拍或核实。',
+        '用分镜和剪辑交付单连接运营、拍摄与剪辑人员，并用模拟案例走查流程。',
       ],
       designProcess: [
         {
           step: '01',
-          title: '梳理二创操作流程',
-          description: '分析创作者素材组织习惯，确定“素材导入 → 要点提炼 → 生成分段文案 → 轨道微调”的操作链路。',
-          keyDecisions: ['采用左右分屏布局，方便创作者对照原始素材与生成文案'],
+          title: '先判断选题能否拍',
+          description: '比较远程看厂、首次采购和质检出货三个样例，展示各选题已有的镜头与缺口。',
+          keyDecisions: ['质检出货样例缺少全部所需镜头，先安排补采，再进入视频制作。'],
         },
         {
           step: '02',
-          title: '设计提示词输入结构',
-          description: '针对不同视频风格（如知识解说、快节奏混剪）整理结构化Prompt输入模板。',
-          keyDecisions: ['将Prompt拆解为角色设定、输出约束与内容输入，提升生成结果稳定性'],
+          title: '在分镜中处理缺口',
+          description: '以首次采购样例为例，第三个镜头缺少包装素材。运营可保留原分镜并创建补拍任务，或替换镜头并调整文案。',
+          keyDecisions: ['将待核实的起订量和 OEM 信息保留为问题，等待业务人员确认。'],
         },
         {
           step: '03',
-          title: '单屏工作流界面推演',
-          description: '整合左侧素材池、中间分段轨道和右侧预览区域，实现紧凑的操作界面。',
-          keyDecisions: ['在分段卡片中允许直接编辑文本内容与时间标记'],
-        },
-        {
-          step: '04',
-          title: '原型制作与自测',
-          description: '运用前端工具配合大模型辅助编写页面代码，多次自测并优化界面排版与响应表现。',
-          keyDecisions: ['通过前端界面模拟视频进度联动，直观呈现功能构想'],
+          title: '把方案交给制作团队',
+          description: '将镜头、文案与时间标记整理为可交付的信息，并提供 XLSX、SRT 和 JSON 导出。',
         },
       ],
       deliverables: [
-        '可在线点击体验的网页交互原型（部署于 GitHub Pages）',
-        '结构化视频脚本提示词模板集',
-        '单屏二创操作流程与界面线框设计',
+        '可交互的选题与分镜工作台，含三种模拟选题场景',
+        '素材缺口提示、分镜替代建议与补拍任务流程',
+        '剪辑交付表、字幕及结构化数据导出演示',
       ],
       limitationsAndReflection: {
         simulatedOrUnverified: [
-          '原型中视频切片与分段渲染属于前端界面模拟，未接入真实的云端音视频处理及大模型在线生成后端。',
-          '未进行大规模真实用户测试，复杂多轨音视频混合场景未予覆盖。',
+          '原型使用模拟素材与预设规则，尚未接入生产模型、真实素材库或视频渲染服务。',
+          '制作时间与线索转化的影响尚待实际业务验证。',
         ],
         futureImprovements: [
-          '后续若有机会可尝试接入开源语音转录接口，验证实际音频转写与文本提取效果。',
-          '考虑增加导出至主流剪辑软件工程文件的兼容支持。',
+          '邀请外贸运营和剪辑人员试用，对比从买家疑问到可执行拍摄单的耗时，并记录未核实表述与返工次数。',
         ],
       },
     },
@@ -126,9 +122,9 @@ export const PROJECTS: Project[] = [
     nature: '悉尼大学校企合作课程概念项目，后续完成网页重制',
     authors: 'Shijie Wu & Hantian Zhu',
     natureNote: '课程概念项目 · 交互原型（非极氪官方商业上线产品，无真实桩端数据流）',
-    subtitle: '针对公共充电站信息不透明与排队焦虑的车主协同充电概念方案',
+    subtitle: '用到达意向补充公共充电站信息，帮助车主评估等待风险',
     description:
-      '针对公共充电站信息不透明、站点比较困难及排队情况难判断等问题，设计充电信息共享、站点比较、到达意向及积分奖励四项核心功能。',
+      '车主可以分享预计到达意向，为其他人选择站点提供参考。交互原型演示站点比较、意向登记和众包信息反馈。',
     tags: [
       '产品设计',
       '用户研究',
@@ -150,6 +146,10 @@ export const PROJECTS: Project[] = [
       problem: {
         statement: '澳大利亚部分第三方公共充电站分布较为分散，且设备状态更新可能存在延迟，车主到达现场后容易面临故障或排队等待。',
         whyItMatters: '补能体验直接影响电动车主的日常出行信心，改善公共充电站信息透明度有助于减轻车主的等待顾虑。',
+      },
+      evidence: {
+        title: '为什么只登记到达意向？',
+        caption: '意向登记让车主表达预计到达时间。原型使用演示数据，意向登记不锁定车位。位置验证与信息时效是团队提出的后续可信度设计。',
       },
       myContribution: [
         '参与核心用户需求分析及产品功能规划。',
@@ -211,7 +211,7 @@ export const PROJECTS: Project[] = [
     isCompleted: true,
     nature: 'RMIT独立课程研究项目，后续整理为个人作品集',
     natureNote: '课程研究 · 业务系统建模（非闲鱼官方委托，未在真实系统中上线）',
-    subtitle: '二手交易全流程业务梳理、四类UML规范建模与争议处理优化方案',
+    subtitle: '从收货争议切入，用 UML 说明订单状态和客服处理流程',
     description:
       '独立分析闲鱼二手交易平台的商品交易、支付、物流及售后纠纷处理流程，使用四类UML模型完成系统分析，并提出智能纠纷助手、信用看板和首页信息架构优化方案。',
     tags: [
@@ -235,6 +235,12 @@ export const PROJECTS: Project[] = [
       problem: {
         statement: 'C2C二手交易中商品非标准属性明显，买卖双方容易在收货后产生分歧，平台客服介入核对证据链的沟通成本较高。',
         whyItMatters: '信任与争议处理是二手交易的核心环节，理清业务逻辑与信息透明度有助于改善交易秩序。',
+      },
+      evidence: {
+        title: '收货后发生争议，订单如何流转？',
+        imagePath: 'assets/projects/idlefish-order-states.png',
+        imageAlt: '闲鱼系统分析展示报告中的订单生命周期状态图摘要',
+        caption: '买家发现商品与描述不符时，可以发起争议并提交凭证。平台客服核对材料，订单进入争议处理，再根据处理结果流转。图为展示报告中的状态图摘要。',
       },
       myContribution: [
         '独立分析交易流程及主要业务参与方。',
@@ -296,8 +302,8 @@ export const PROJECTS: Project[] = [
     isCompleted: true,
     nature: '悉尼大学 Prezzee 校企合作六人团队项目',
     natureNote: '学术概念方案 · 交互演示；尚未开展居民原始研究或实地试点，非 Prezzee 官方产品',
-    subtitle: '从资助路径比较到首次到场支持，探索社区参与的 B2B2C 服务模式',
-    description: '将机构资助、社区转介、报名协助、到场迎接和自愿随访串联为服务方案，比较会员、直接入场与礼品卡路径，并通过交互原型呈现预算和实施条件。',
+    subtitle: '比较三种资助路径的试点成本，设计居民首次到场所需的支持',
+    description: '在相同参与支持下，比较会员、直接入场与礼品卡的成本，评估礼品卡相较直接入场多出的 A$500 能否改善参与。',
     tags: ['B2B2C商业模式', '财务可行性', '服务流程', '交互原型'],
     demoUrl: 'togetherpass/',
     githubUrl: 'https://github.com/jasonwu5isme/TogetherPass',
@@ -315,6 +321,15 @@ export const PROJECTS: Project[] = [
       problem: {
         statement: '承担活动费用未必足以帮助居民首次加入社区活动。二手研究提示焦虑、信心、活动适配及费用可能影响参与，这些因素仍需向当地居民验证。',
         whyItMatters: '需要同时判断哪些参与支持有价值，以及礼品卡相较会员或直接付费是否值得其额外成本，避免先确定支付工具再寻找需求。',
+      },
+      evidence: {
+        title: '三种资助路径的试点预算',
+        metrics: [
+          { label: '会员', value: 'A$5,440' },
+          { label: '直接入场', value: 'A$6,160' },
+          { label: '礼品卡', value: 'A$6,660' },
+        ],
+        caption: '以 30 人、6 周的拟议试点估算，三种路径均包含 A$5,260 的参与支持。礼品卡比直接入场多 A$500，试点需验证这笔费用能否改善首次到场或后续参与。预算尚待审批。',
       },
       myContribution: [
         '设计未来态商业模式画布，梳理机构买方价值、资金流及利益相关方职责。',
@@ -412,7 +427,7 @@ export const EDUCATION_HISTORY: EducationItem[] = [
   {
     institution: '悉尼大学',
     englishInstitution: 'The University of Sydney',
-    degree: '商业信息系统 硕士',
+    degree: '商学硕士（商业信息系统方向）',
     period: '2026.03 实际入学 — 2027 预计毕业',
     status: 'Master of Commerce (BIS)',
     note: '2025年修读商业信息技术研究生课程（RMIT），后基于个人学业规划转入悉尼大学继续深造。',
@@ -441,10 +456,9 @@ export const RESUME_DATA: ResumeData = {
   name: '吴世杰',
   englishName: 'Shijie Wu',
   targetRoles: [
-    'AI产品经理 / 互联网产品经理',
+    'AI 产品经理',
+    '业务型产品经理',
     '商业分析（Business Analysis）',
-    '企业数字化与解决方案',
-    '数字化运营及商业相关岗位',
   ],
   email: '158975683@qq.com',
   github: 'https://github.com/jasonwu5isme',
@@ -498,10 +512,10 @@ export const RESUME_DATA: ResumeData = {
       linkToProjectId: 'idle-fish-analysis',
     },
     {
-      title: 'TradeRemix AI｜视频内容生产与再创作原型',
+      title: 'TradeRemix AI｜外贸 B2B 视频选题与分镜工作台',
       period: '2026.10 — 2026.11',
       role: 'AI产品设计与原型制作（个人独立作品）',
-      summary: '基于笔试题目延伸，设计二创单视窗工作流与提示词模板，使用Google AI Studio辅助构建可交互网页原型。',
+      summary: '设计从买家疑问、素材匹配到分镜交付的工作流，演示镜头缺失时如何选择改写、替换或补拍，并将方案导出给制作团队。',
       linkToProjectId: 'traderemix-ai',
     },
     {

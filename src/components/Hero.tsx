@@ -81,7 +81,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigateTab }) => {
                 悉尼大学 2027 届硕士在读
               </div>
               <div className="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5 leading-relaxed">
-                商业信息系统硕士 · 市场营销本科（暨大2+2/中留服认证）
+                商学硕士（商业信息系统方向）· 市场营销文学学士
               </div>
             </div>
 
@@ -93,7 +93,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigateTab }) => {
                 需求分析 · UML系统建模 · 原型验证
               </div>
               <div className="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5 leading-relaxed">
-                聚焦AI/互联网产品经理、商业分析与企业数字化岗位
+                主攻 AI 产品和业务型产品岗位，擅长商业分析
               </div>
             </div>
 
