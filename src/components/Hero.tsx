@@ -1,6 +1,6 @@
 import React from 'react';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import { ArrowDown, ArrowUpRight, FileText } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { NavTab } from '../types';
 
 interface HeroProps {
@@ -25,35 +25,13 @@ export const Hero: React.FC<HeroProps> = ({ onNavigateTab }) => {
           {PERSONAL_INFO.shortBio}
         </p>
 
-        {/* Three Primary Action Entries */}
-        <div className="flex flex-wrap items-center gap-3.5">
-          {/* Entry 1: 查看精选作品 */}
-          <button
-            onClick={() => onNavigateTab('projects')}
-            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500 rounded-full transition-all shadow-xs hover:shadow-md cursor-pointer whitespace-nowrap"
-          >
-            <span>查看精选作品</span>
-            <ArrowDown className="w-4 h-4" />
-          </button>
-
-          {/* Entry 2: 查看个人履历 */}
-          <button
-            onClick={() => onNavigateTab('resume')}
-            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-neutral-800 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200/80 dark:hover:bg-neutral-700/80 rounded-full transition-all cursor-pointer whitespace-nowrap"
-          >
-            <FileText className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-            <span>查看个人履历</span>
-          </button>
-
-          {/* Entry 3: 联系我 */}
-          <button
-            onClick={() => onNavigateTab('contact')}
-            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-neutral-700 dark:text-neutral-300 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-850 rounded-full transition-all cursor-pointer whitespace-nowrap"
-          >
-            <span>联系我</span>
-            <ArrowUpRight className="w-4 h-4 text-neutral-400" />
-          </button>
-        </div>
+        <button
+          onClick={() => onNavigateTab('projects')}
+          className="inline-flex items-center gap-2 border-b border-current pb-1 text-sm font-medium text-neutral-900 hover:text-blue-700 dark:text-neutral-100 dark:hover:text-blue-400"
+        >
+          浏览项目
+          <ArrowUpRight aria-hidden="true" className="h-4 w-4" />
+        </button>
 
       </div>
     </section>

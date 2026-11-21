@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   brandTitle: 'Shijie Wu',
   siteTitle: 'Shijie Wu — 作品集',
   shortBio:
-    '我在悉尼大学读商学硕士，主修商业信息系统，本科读的是市场营销。在社区服务项目里，我算过三种资助方式各要花多少钱。在闲鱼案例里，我梳理的是一笔订单发生争议后，买家、卖家和客服分别要做什么。',
+    '悉尼大学商学硕士在读（商业信息系统方向）',
   email: '158975683@qq.com',
   github: 'https://github.com/jasonwu5isme',
   githubUsername: 'jasonwu5isme',
